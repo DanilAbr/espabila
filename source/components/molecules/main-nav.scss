@@ -1,0 +1,27 @@
+.main-nav {
+
+  &__item {
+    margin-bottom: 76px;
+    border-bottom: 1px solid $color_black;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-left: 2px;
+    text-decoration: none;
+    color: $color_black_1;
+
+    @include nunito(24px, 33px, 700);
+  }
+
+  &__svg {
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+}
