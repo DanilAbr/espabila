@@ -1,0 +1,13 @@
+@mixin fontface($family, $localname, $filename, $weight, $style) {
+  @font-face {
+    font-display: block;
+    font-family: $family;
+    src: local('#{$localname}'), url('../assets/fonts/#{$filename}.woff2') format('woff2');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin project-font($size, $line-height, $weight, $style) {
+  font: $style $weight #{$size}/#{$line-height} 'Rubik', 'Arial', sans-serif;
+}
