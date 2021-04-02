@@ -1,14 +1,81 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/style.css" rel="stylesheet"/>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" />
+  <title>Espabila</title>
 </head>
+
 <body>
-<h1>Espabila</h1>
+<div style="display: none">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-menu-item-arrow" viewBox="0 0 14 14">
+      <path d="M13.724 6.805L.724.599a.52.52 0 00-.593.104.462.462 0 00-.057.573l3.84 5.955-3.84 5.956a.461.461 0
+        00.057.573.513.513 0 00.593.104l13-6.206A.476.476 0 0014 7.231a.476.476 0 00-.276-.426zM1.845
+        12.262l3.081-4.78a.458.458 0 000-.5L1.846 2.2l10.536 5.03-10.537 5.03z" />
+    </symbol>
+  </svg>
+</div>
+
+<header class="page-header">
+  <div class="page-header__first-screen-wrapper">
+    <div class="page-header__main-nav">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#about-me">Обо мне
+              <svg class="main-nav__svg" width="14" height="14">
+                <use xlink:href="#icon-menu-item-arrow"/>
+              </svg>
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#lessons">Варианты занятий
+              <svg class="main-nav__svg" width="14" height="14">
+                <use xlink:href="#icon-menu-item-arrow"/>
+              </svg>
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#blog">Блог
+              <svg class="main-nav__svg" width="14" height="14">
+                <use xlink:href="#icon-menu-item-arrow"/>
+              </svg>
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#contacts">Контакты
+              <svg class="main-nav__svg" width="14" height="14">
+                <use xlink:href="#icon-menu-item-arrow"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="page-header__button-wrapper">
+    <button
+      class="page-header__toggle-menu-button"
+      type="button"
+      aria-label="Открыть меню"
+    ></button>
+  </div>
+</header>
+
+<script>
+  const firstScreenWrapper = document.querySelector('.page-header__first-screen-wrapper');
+  const button = document.querySelector('.page-header__toggle-menu-button');
+
+  button.addEventListener('click', () => {
+      button.classList.toggle('page-header__toggle-menu-button--open-menu');
+      firstScreenWrapper.classList.toggle('page-header__first-screen-wrapper--hide');
+  });
+</script>
 </body>
 </html>

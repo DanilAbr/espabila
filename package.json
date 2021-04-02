@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "lint:scss": "stylelint ./source/**/*.scss --fix"
   },
   "devDependencies": {
     "autoprefixer": "9.8.6",
