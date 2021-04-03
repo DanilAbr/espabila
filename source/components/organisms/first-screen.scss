@@ -1,0 +1,35 @@
+.first-screen {
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 7%;
+
+  &__img {
+    display: block;
+    width: 114%;
+    max-width: 414px;
+    margin-left: -7%;
+  }
+
+  &__text {
+    @include nunito(19px, 26px, 300);
+  }
+
+  &__text--top {
+    margin-top: -30px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #880006;
+
+    @include nunito(45px, 44px, 800);
+  }
+}
+
+@media (min-width: 350px) {
+  .first-screen {
+    &__title {
+      @include nunito(50px, 49px, 800);
+    }
+  }
+}
