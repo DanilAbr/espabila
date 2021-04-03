@@ -45,7 +45,7 @@
           </li>
 
           <li class="main-nav__item">
-            <a class="main-nav__link" href="class-options.html">Варианты занятий
+            <a class="main-nav__link">Варианты занятий
               <svg class="main-nav__svg" width="14" height="14">
                 <use xlink:href="#icon-menu-item-arrow" />
               </svg>
@@ -88,19 +88,60 @@
     </svg>
   </button>
 
-  <section class="first-screen">
-    <img class="first-screen__img" src="assets/images/index-first-photo-x1.webp" alt="Александра Абрамова">
-
-    <p class="first-screen__text first-screen__text--top">Привет, меня зовут</p>
-    <h1 class="first-screen__title">Александра Абрамова</h1>
-    <p class="first-screen__text first-screen__text--bottom">
-      Я более пяти лет знакомлю и влюбляю людей в испанский язык. Если ты давно мечтаешь заговорить на самой красивом
-      языке в мире, то ты обратился по адресу.
-    </p>
+  <section class="class-options">
+    <h1 class="class-options__title">Варианты занятий</h1>
+    <ul class="class-options__list">
+      <li class="class-options__item">
+        <div class="option-card">
+          <p class="option-card__number">01</p>
+          <picture>
+            <img class="option-card__image" src="#" alt="путешествие">
+          </picture>
+          <div class="option-card__content">
+            <h2 class="option-card__title">Общий курс испанского языка</h2>
+            <strong class="option-card__annotation">для кого этот курс?</strong>
+            <p class="option-card__description">
+              Подойдет для тех кто хочет изучать язык «для себя», путешествий и жизни в Испании. Материал подбирается....
+            </p>
+            <div class="option-card__more-info">
+              <button class="button-secondary">Подробнее о курсе</button>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
   </section>
 </main>
 
-<script src="main.js"></script>
+<footer class="page-footer">
+  <div class="page-footer__social">
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a href="#" class="social-list__link" aria-label="facebook">
+          <svg class="social-list__icon social-list__icon--facebook" width="7" height="15" fill="none">
+            <use xlink:href="#icon-facebook" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="#" class="social-list__link" aria-label="twitter">
+          <svg class="social-list__icon social-list__icon--twitter" width="14" height="15" fill="none">
+            <use xlink:href="#icon-twitter" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="#" class="social-list__link" aria-label="instagram">
+          <svg class="social-list__icon social-list__icon--instagram" width="13" height="13" fill="none">
+            <use xlink:href="#icon-instagram" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <p class="page-footer__copyright">©️ 2021 espabila | все права защищены</p>
+</footer>
 
+<script src="main.js"></script>
 </body>
 </html>
