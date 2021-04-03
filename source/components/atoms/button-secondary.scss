@@ -1,0 +1,21 @@
+.button-secondary {
+  display: block;
+  width: 100%;
+  padding: 5px;
+
+  text-align: center;
+
+  border: 2px solid #fbe373;
+  border-radius: 3px;
+
+  @include nunito(16px, 22px, 400);
+
+  &:hover,
+  &:focus {
+    background-color: #fbe373;
+  }
+
+  &:active {
+    opacity: .8;
+  }
+}
