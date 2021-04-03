@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet" />
   <title>Espabila</title>
 </head>
@@ -15,18 +15,22 @@
         00.057.573.513.513 0 00.593.104l13-6.206A.476.476 0 0014 7.231a.476.476 0 00-.276-.426zM1.845
         12.262l3.081-4.78a.458.458 0 000-.5L1.846 2.2l10.536 5.03-10.537 5.03z" />
     </symbol>
+    <symbol id="icon-arrow-to-anchor-scroll" viewBox="0 0 8 88">
+      <path d="M3.646 87.705a.5.5 0 00.708 0l3.182-3.182a.5.5 0 10-.708-.707L4 86.644l-2.828-2.828a.5.5 0 00-.708.707l3.182
+        3.182zM3.5.352v87h1v-87h-1z"/>
+    </symbol>
   </svg>
 </div>
 
 <header class="page-header">
-  <div class="page-header__first-screen-wrapper">
-    <div class="page-header__main-nav">
+  <div class="page-header__first-screen-wrapper page-header__first-screen-wrapper--hide">
+    <div class="page-header__main-nav-wrapper">
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#about-me">Обо мне
               <svg class="main-nav__svg" width="14" height="14">
-                <use xlink:href="#icon-menu-item-arrow"/>
+                <use xlink:href="#icon-menu-item-arrow" />
               </svg>
             </a>
           </li>
@@ -34,7 +38,7 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="#lessons">Варианты занятий
               <svg class="main-nav__svg" width="14" height="14">
-                <use xlink:href="#icon-menu-item-arrow"/>
+                <use xlink:href="#icon-menu-item-arrow" />
               </svg>
             </a>
           </li>
@@ -42,7 +46,7 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="#blog">Блог
               <svg class="main-nav__svg" width="14" height="14">
-                <use xlink:href="#icon-menu-item-arrow"/>
+                <use xlink:href="#icon-menu-item-arrow" />
               </svg>
             </a>
           </li>
@@ -50,7 +54,7 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="#contacts">Контакты
               <svg class="main-nav__svg" width="14" height="14">
-                <use xlink:href="#icon-menu-item-arrow"/>
+                <use xlink:href="#icon-menu-item-arrow" />
               </svg>
             </a>
           </li>
@@ -61,21 +65,51 @@
 
   <div class="page-header__button-wrapper">
     <button
-      class="page-header__toggle-menu-button"
+      class="page-header__toggle-menu-button page-header__toggle-menu-button--open-menu"
       type="button"
       aria-label="Открыть меню"
     ></button>
   </div>
 </header>
 
-<script>
-  const firstScreenWrapper = document.querySelector('.page-header__first-screen-wrapper');
-  const button = document.querySelector('.page-header__toggle-menu-button');
+<main class="page-main">
+  <button class="page-main__scroll-button" type="button">
+    <svg width="8" height="88">
+      <use xlink:href="#icon-arrow-to-anchor-scroll" />
+    </svg>
+  </button>
 
-  button.addEventListener('click', () => {
-      button.classList.toggle('page-header__toggle-menu-button--open-menu');
-      firstScreenWrapper.classList.toggle('page-header__first-screen-wrapper--hide');
-  });
+  <section class="first-screen">
+    <img class="first-screen__img" src="assets/images/index-first-photo-x1.webp" alt="Александра Абрамова">
+
+    <p class="first-screen__text first-screen__text--top">Привет, меня зовут</p>
+    <h1 class="first-screen__title">Александра Абрамова</h1>
+    <p class="first-screen__text first-screen__text--bottom">
+      Я более пяти лет знакомлю и влюбляю людей в испанский язык. Если ты давно мечтаешь заговорить на самой красивом
+      языке в мире, то ты обратился по адресу.
+    </p>
+  </section>
+</main>
+
+<script>
+    const firstScreenWrapper = document.querySelector('.page-header__first-screen-wrapper');
+    const button = document.querySelector('.page-header__toggle-menu-button');
+
+    const changeAriaLabel = () => {
+        if (button.classList.contains('page-header__toggle-menu-button--open-menu')) {
+            button.ariaLabel = 'Закрыть меню';
+            return;
+        }
+        button.ariaLabel = 'Открыть меню';
+    };
+
+    const onToggleMenuButtonClick = () => {
+        changeAriaLabel();
+        button.classList.toggle('page-header__toggle-menu-button--open-menu');
+        firstScreenWrapper.classList.toggle('page-header__first-screen-wrapper--hide');
+    };
+
+    button.addEventListener('click', onToggleMenuButtonClick);
 </script>
 </body>
 </html>

@@ -11,7 +11,7 @@ const rename = require("gulp-rename");
 function copy() {
   return gulp.src([
     "source/assets/fonts/*.{woff,woff2}",
-    "source/assets/images/*.{jpg,png,svg,ico}",
+    "source/assets/images/*.{jpg,png,svg,ico,webp}",
     "source/*.js"
   ], {base: "source"})
     .pipe(gulp.dest("public"))

@@ -5,6 +5,7 @@
   ],
   "rules": {
     "declaration-no-important": true,
+    "rule-empty-line-before": false,
     "indentation": [
       2,
       {
