@@ -3,11 +3,14 @@
   width: 100%;
   padding: 9px;
 
+  text-decoration: none;
   text-align: center;
+  color: #ffffff;
 
   border: 2px solid #880006;
   border-radius: 5px;
   background-color: #880006;
+  cursor: pointer;
 
   @include nunito(16px, 22px, 400);
 
