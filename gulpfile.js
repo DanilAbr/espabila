@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const del = require("del");
 const rename = require("gulp-rename");
+const twig = require("gulp-twig");
 
 function copy() {
   return gulp.src([
@@ -18,7 +19,8 @@ function copy() {
 }
 
 function html() {
-  return gulp.src("source/pages/**/*.html")
+  return gulp.src("source/pages/**/*.twig")
+    .pipe(twig())
     .pipe(gulp.dest("public"))
     .pipe(sync.stream());
 }
@@ -49,7 +51,7 @@ function server(done) {
 
 function watcher() {
   gulp.watch("source/**/*.scss", gulp.series(styles));
-  gulp.watch("source/**/*.html", gulp.series(html));
+  gulp.watch("source/**/*.twig", gulp.series(html));
 }
 
 function clean() {
