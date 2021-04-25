@@ -1,1 +1,48 @@
-{}
+{
+  "title": "Вариант занятий",
+  "options": [
+    {
+      "id": "1",
+      "title": "Общий курс испанского языка",
+      "annotation": "для кого этот курс?",
+      "description": "Подойдет для тех кто хочет изучать язык «для себя», путешествий и жизни в Испании. Материал подбирается....",
+      "icon": {
+        "id": "icon-number-1",
+        "width": "116",
+        "height": "75"
+      },
+      "img": {
+        "default": "assets/images/class-icon-1@1x.png",
+        "retina": "assets/images/class-icon-1@2x.png",
+        "alt": "путешествие"
+      }
+    }
+  ],
+  "socialList": [
+    {
+      "name": "facebook",
+      "href": "#",
+      "icon": {
+        "id": "icon-facebook",
+        "width": "7",
+        "height": "15"
+      }
+    },{
+      "name": "twitter",
+      "href": "#",
+      "icon": {
+        "id": "icon-twitter",
+        "width": "14",
+        "height": "15"
+      }
+    },{
+      "name": "instagram",
+      "href": "#",
+      "icon": {
+        "id": "icon-instagram",
+        "width": "13",
+        "height": "13"
+      }
+    }
+  ]
+}

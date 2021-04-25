@@ -1,23 +1,25 @@
 <div class="option-card">
-  <svg class="option-card__number-icon" width="116" height="75">
-    <use xlink:href="#icon-number-1" />
+  <svg
+    class="option-card__number-icon"
+    width="{{ props.icon.width }}"
+    height="{{ props.icon.height }}"
+  >
+    <use xlink:href="#{{ props.icon.id }}" />
   </svg>
   <div class="option-card__image-wrapper">
     <picture>
       <img
-        class="option-card__image option-card__image--first"
-        src="assets/images/class-icon-1@1x.png"
-        srcset="assets/images/class-icon-1@2x.png 2x"
-        alt="путешествие"
+        class="option-card__image option-card__image--{{ props.id }}"
+        src="{{ props.img.default }}"
+        srcset="{{ props.img.retina }} 2x"
+        alt="{{ props.img.alt }}"
       >
     </picture>
   </div>
   <div class="option-card__content">
-    <h2 class="option-card__title">Общий курс испанского языка</h2>
-    <strong class="option-card__annotation">для кого этот курс?</strong>
-    <p class="option-card__description">
-      Подойдет для тех кто хочет изучать язык «для себя», путешествий и жизни в Испании. Материал подбирается....
-    </p>
+    <h2 class="option-card__title">{{ props.title }}</h2>
+    <strong class="option-card__annotation">{{ props.annotation }}</strong>
+    <p class="option-card__description">{{ props.description }}</p>
     <div class="option-card__more-info">
 
       {% include '../../atoms/button-secondary/button-secondary.twig' with {
