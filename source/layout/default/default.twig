@@ -40,55 +40,7 @@
   </svg>
 </div>
 
-<header class="page-header">
-  <div class="page-header__first-screen-wrapper page-header__first-screen-wrapper--hide">
-    <div class="page-header__main-nav-wrapper">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#about-me">Обо мне
-              <svg class="main-nav__svg" width="14" height="14">
-                <use xlink:href="#icon-menu-item-arrow" />
-              </svg>
-            </a>
-          </li>
-
-          <li class="main-nav__item">
-            <a class="main-nav__link">Варианты занятий
-              <svg class="main-nav__svg" width="14" height="14">
-                <use xlink:href="#icon-menu-item-arrow" />
-              </svg>
-            </a>
-          </li>
-
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#blog">Блог
-              <svg class="main-nav__svg" width="14" height="14">
-                <use xlink:href="#icon-menu-item-arrow" />
-              </svg>
-            </a>
-          </li>
-
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#contacts">Контакты
-              <svg class="main-nav__svg" width="14" height="14">
-                <use xlink:href="#icon-menu-item-arrow" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
-  <div class="page-header__button-wrapper">
-    <button
-      class="page-header__toggle-menu-button page-header__toggle-menu-button--open-menu"
-      type="button"
-      aria-label="Открыть меню"
-    ></button>
-  </div>
-</header>
+{% include '../../components/organisms/page-header/page-header.twig' %}
 
 <main class="page-main">
 

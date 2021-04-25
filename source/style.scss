@@ -3,9 +3,11 @@
   "fonts",
   "variables",
   "global",
-  "components/molecules/main-nav",
-  "components/organisms/page-header",
+"source/components/molecules/main-nav/main-nav",
+"source/components/molecules/option-card/option-card",
+"source/components/organisms/page-header/page-header",
   "components/organisms/first-screen",
-  "components/organisms/page-main",
-  "components/atoms/button-secondary",
-  "components/atoms/button-primary";
+"source/layout/default/page-main",
+"source/pages/class-options/class-options",
+"source/components/atoms/button-secondary/button-secondary",
+"source/components/atoms/button-primary/button-primary";

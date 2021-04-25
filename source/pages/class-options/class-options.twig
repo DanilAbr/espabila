@@ -1,0 +1,21 @@
+{% extends '../../layout/default/default.twig' %}
+
+{% block content %}
+
+  <section class="class-options">
+    <h1 class="class-options__title">Варианты занятий</h1>
+    <ul class="class-options__list">
+      <li class="class-options__item">
+        {% include '../../components/molecules/option-card/option-card.twig' %}
+      </li>
+    </ul>
+  </section>
+
+{% endblock %}
+
+{% block footer %}
+
+  {% include '../../components/organisms/page-footer/page-footer.twig' %}
+
+{% endblock %}
+

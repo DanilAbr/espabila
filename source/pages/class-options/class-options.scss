@@ -1,0 +1,17 @@
+.class-options {
+  padding-top: 47px;
+}
+
+.class-options__title {
+  max-width: 350px;
+  margin: 0 auto 121px;
+
+  text-align: center;
+  color: $color_black_1;
+
+  @include nunito(40px, 37px, 700);
+}
+
+.class-options__list {
+  padding: 0 30px;
+}
