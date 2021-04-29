@@ -1,0 +1,31 @@
+<div class="option-card">
+  <svg
+    class="option-card__number-icon"
+    width="{{ props.icon.width }}"
+    height="{{ props.icon.height }}"
+  >
+    <use xlink:href="#{{ props.icon.id }}" />
+  </svg>
+  <div class="option-card__image-wrapper">
+    <picture>
+      <img
+        class="option-card__image option-card__image--{{ props.id }}"
+        src="{{ props.img.default }}"
+        srcset="{{ props.img.retina }} 2x"
+        alt="{{ props.img.alt }}"
+      >
+    </picture>
+  </div>
+  <div class="option-card__content">
+    <h2 class="option-card__title">{{ props.title }}</h2>
+    <strong class="option-card__annotation">{{ props.annotation }}</strong>
+    <p class="option-card__description">{{ props.description }}</p>
+    <div class="option-card__more-info">
+
+      {% include '../../atoms/button-secondary/button-secondary.twig' with {
+        'name': 'Подробнее о курсе'
+      }%}
+
+    </div>
+  </div>
+</div>

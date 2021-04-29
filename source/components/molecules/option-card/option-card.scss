@@ -1,0 +1,57 @@
+.option-card {
+  position: relative;
+  padding-top: 31px;
+
+  &__number-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+
+    transform: translateX(-50%);
+  }
+
+  &__image-wrapper {
+    justify-content: center;
+    display: flex;
+    width: 354px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__image--1 {
+    margin: 0 0 0 15px;
+  }
+
+  &__content {
+    padding: 34px 37px;
+
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .25);
+  }
+
+  &__title {
+    color: $color_black_1;
+
+    @include nunito(17px, 25px, 700);
+  }
+
+  &__annotation {
+    color: $color_black_1;
+
+    @include nunito(14px, 19px, 700);
+  }
+
+  &__description {
+    color: $color_black_1;
+
+    @include nunito(13px, 18px, 300);
+  }
+
+  &__more-info {
+    width: 100%;
+  }
+}
