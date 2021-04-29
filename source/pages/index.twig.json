@@ -1,1 +1,29 @@
-{}
+{
+  "socialList": [
+    {
+      "name": "facebook",
+      "href": "#",
+      "icon": {
+        "id": "icon-facebook",
+        "width": "7",
+        "height": "15"
+      }
+    },{
+      "name": "twitter",
+      "href": "#",
+      "icon": {
+        "id": "icon-twitter",
+        "width": "14",
+        "height": "15"
+      }
+    },{
+      "name": "instagram",
+      "href": "#",
+      "icon": {
+        "id": "icon-instagram",
+        "width": "13",
+        "height": "13"
+      }
+    }
+  ]
+}
