@@ -1,0 +1,16 @@
+.page-footer {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding-bottom: 100px;
+
+  &__social {
+    margin-bottom: 30px;
+  }
+
+  &__copyright {
+    color: #000000;
+
+    @include nunito(13px, 120%, 300);
+  }
+}

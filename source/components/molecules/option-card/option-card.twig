@@ -20,12 +20,8 @@
     <h2 class="option-card__title">{{ props.title }}</h2>
     <strong class="option-card__annotation">{{ props.annotation }}</strong>
     <p class="option-card__description">{{ props.description }}</p>
-    <div class="option-card__more-info">
-
-      {% include '../../atoms/button-secondary/button-secondary.twig' with {
-        'name': 'Подробнее о курсе'
-      }%}
-
-    </div>
+    <button class="option-card__more-button button-secondary">
+      Подробнее о курсе
+    </button>
   </div>
 </div>

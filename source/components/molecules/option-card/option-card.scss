@@ -3,12 +3,13 @@
   padding-top: 31px;
 
   &__number-icon {
-    position: absolute;
-    top: 0;
-    left: 50%;
+    //position: absolute;
+    //top: 0;
+    //left: 50%;
     display: block;
-
-    transform: translateX(-50%);
+    margin: 0 auto;
+    //
+    //transform: translateX(-50%);
   }
 
   &__image-wrapper {
@@ -21,37 +22,46 @@
 
   &__image {
     display: block;
+    margin-top: -5px;
   }
-
-  &__image--1 {
-    margin: 0 0 0 15px;
-  }
+  //
+  //&__image--1 {
+  //  margin: 0 0 0 15px;
+  //}
 
   &__content {
-    padding: 34px 37px;
-
+    max-width: 354px;
+    margin: 0 auto;
+    padding: 34px 37px 41px;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, .25);
   }
 
   &__title {
+    margin-top: 0;
     color: $color_black_1;
 
     @include nunito(17px, 25px, 700);
   }
 
   &__annotation {
+    display: block;
+    margin-bottom: 21px;
     color: $color_black_1;
 
     @include nunito(14px, 19px, 700);
   }
 
   &__description {
+    margin-top: 0;
+    margin-bottom: 22px;
     color: $color_black_1;
 
     @include nunito(13px, 18px, 300);
   }
 
-  &__more-info {
+  &__more-button {
+    display: block;
     width: 100%;
+    padding: 12px;
   }
 }

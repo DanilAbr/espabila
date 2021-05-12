@@ -2,12 +2,16 @@
   "mixins",
   "fonts",
   "variables",
-  "global",
-"source/components/molecules/main-nav/main-nav",
-"source/components/molecules/option-card/option-card",
-"source/components/organisms/page-header/page-header",
-  "components/organisms/first-screen",
-"source/layout/default/page-main",
-"source/pages/class-options/class-options",
-"source/components/atoms/button-secondary/button-secondary",
-"source/components/atoms/button-primary/button-primary";
+  "global";
+
+@import
+  "source/components/atoms/button-secondary/button-secondary",
+  "source/components/atoms/button-primary/button-primary",
+  "source/components/molecules/main-nav/main-nav",
+  "source/components/molecules/option-card/option-card",
+  "source/components/molecules/social-list/social-list",
+  "source/components/organisms/page-header/page-header",
+  "source/components/organisms/page-footer/page-footer",
+  "source/components/organisms/first-screen",
+  "source/layout/default/page-main",
+  "source/pages/class-options/class-options";
