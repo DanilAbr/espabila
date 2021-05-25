@@ -12,8 +12,16 @@
         "height": "75"
       },
       "img": {
-        "default": "assets/images/class-icon-1@1x.png",
-        "retina": "assets/images/class-icon-1@2x.png",
+        "default": {
+          "mobile": "assets/images/class-icon-1-mobile@1x.png",
+          "tablet": "assets/images/class-icon-1-tablet@1x.png",
+          "desktop": "assets/images/class-icon-1-desktop@1x.png"
+        },
+        "retina": {
+          "mobile": "assets/images/class-icon-1-mobile@2x.png",
+          "tablet": "assets/images/class-icon-1-tablet@2x.png",
+          "desktop": "assets/images/class-icon-1-desktop@2x.png"
+        },
         "alt": "путешествие"
       }
     },{
@@ -27,8 +35,16 @@
         "height": "75"
       },
       "img": {
-        "default": "assets/images/class-icon-2@1x.png",
-        "retina": "assets/images/class-icon-2@2x.png",
+        "default": {
+          "mobile": "assets/images/class-icon-2-mobile@1x.png",
+          "tablet": "assets/images/class-icon-2-tablet@1x.png",
+          "desktop": "assets/images/class-icon-2-desktop@1x.png"
+        },
+        "retina": {
+          "mobile": "assets/images/class-icon-2-mobile@2x.png",
+          "tablet": "assets/images/class-icon-2-tablet@2x.png",
+          "desktop": "assets/images/class-icon-2-desktop@2x.png"
+        },
         "alt": "Ученики за партами"
       }
     },{
@@ -42,8 +58,16 @@
         "height": "75"
       },
       "img": {
-        "default": "assets/images/class-icon-3@1x.png",
-        "retina": "assets/images/class-icon-3@2x.png",
+        "default": {
+          "mobile": "assets/images/class-icon-3-mobile@1x.png",
+          "tablet": "assets/images/class-icon-3-tablet@1x.png",
+          "desktop": "assets/images/class-icon-3-desktop@1x.png"
+        },
+        "retina": {
+          "mobile": "assets/images/class-icon-3-mobile@2x.png",
+          "tablet": "assets/images/class-icon-3-tablet@2x.png",
+          "desktop": "assets/images/class-icon-3-desktop@2x.png"
+        },
         "alt": "путешествие"
       }
     }

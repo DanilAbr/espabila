@@ -1,3 +1,7 @@
 @mixin nunito($size, $line-height, $weight) {
   font: $weight #{$size}/#{$line-height} "Nunito", "Arial", sans-serif;
 }
+
+@mixin montserrat($size, $line-height, $weight) {
+  font: $weight #{$size}/#{$line-height} "Montserrat", "Arial", sans-serif;
+}
