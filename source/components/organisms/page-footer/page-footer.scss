@@ -1,0 +1,17 @@
+.page-footer {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding-bottom: 100px;
+
+  &__social {
+    margin-bottom: 23px;
+  }
+
+  &__copyright {
+    margin: 0;
+    color: #000000;
+
+    @include montserrat(13px, 120%, 300);
+  }
+}

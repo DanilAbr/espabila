@@ -1,4 +1,4 @@
-<div class="option-card">
+<div class="option-card {{ isReversed ? 'option-card--reversed' : '' }}">
   <svg
     class="option-card__number-icon"
     width="{{ props.icon.width }}"
@@ -8,10 +8,18 @@
   </svg>
   <div class="option-card__image-wrapper">
     <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset={{ [props.img.default.tablet, '1x,', props.img.retina.tablet,'2x']|join(' ') }}
+      >
+      <source
+        media="(min-width: 1152px)"
+        srcset={{ [props.img.default.desktop, '1x,', props.img.retina.desktop,'2x']|join(' ') }}
+      >
       <img
         class="option-card__image option-card__image--{{ props.id }}"
-        src="{{ props.img.default }}"
-        srcset="{{ props.img.retina }} 2x"
+        src="{{ props.img.default.mobile }}"
+        srcset="{{ props.img.retina.mobile }} 2x"
         alt="{{ props.img.alt }}"
       >
     </picture>
@@ -20,12 +28,8 @@
     <h2 class="option-card__title">{{ props.title }}</h2>
     <strong class="option-card__annotation">{{ props.annotation }}</strong>
     <p class="option-card__description">{{ props.description }}</p>
-    <div class="option-card__more-info">
-
-      {% include '../../atoms/button-secondary/button-secondary.twig' with {
-        'name': 'Подробнее о курсе'
-      }%}
-
-    </div>
+    <button class="option-card__more-button button-secondary">
+      Подробнее о курсе
+    </button>
   </div>
 </div>

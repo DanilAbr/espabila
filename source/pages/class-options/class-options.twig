@@ -5,15 +5,16 @@
   <section class="class-options">
     <h1 class="class-options__title">{{ title }}</h1>
     <ul class="class-options__list">
-      <li class="class-options__item">
 
         {% for option in options %}
-          {% include '../../components/molecules/option-card/option-card.twig' with {
-            'props': option
-          } %}
+          <li class="class-options__item">
+            {% include '../../components/molecules/option-card/option-card.twig' with {
+              'props': option,
+              'isReversed': loop.index0 != 1 ? 'reversed' : '',
+            } %}
+          </li>
         {% endfor %}
 
-      </li>
     </ul>
   </section>
 

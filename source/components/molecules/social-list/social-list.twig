@@ -1,23 +1,25 @@
-<ul class="social-list">
+<div class="social-list">
+  <ul class="social-list__content">
 
-  {% for social in socialList %}
+    {% for social in socialList %}
 
-  <li class="social-list__item">
-    <a
-      class="social-list__link"
-      href="{{ social.href }}"
-      aria-label="{{ social.name }}"
-    >
-      <svg
-        class="social-list__icon social-list__icon--{{ social.name }}"
-        width="{{ social.icon.width }}"
-        height="{{ social.icon.height }}"
-        fill="none">
-        <use xlink:href="#{{ social.icon.id }}" />
-      </svg>
-    </a>
-  </li>
+      <li class="social-list__item">
+        <a
+          class="social-list__link"
+          href="{{ social.href }}"
+          aria-label="{{ social.name }}"
+        >
+          <svg
+            class="social-list__icon social-list__icon--{{ social.name }}"
+            width="{{ social.icon.width }}"
+            height="{{ social.icon.height }}"
+            fill="none">
+            <use xlink:href="#{{ social.icon.id }}" />
+          </svg>
+        </a>
+      </li>
 
-  {% endfor %}
+    {% endfor %}
 
-</ul>
+  </ul>
+</div>

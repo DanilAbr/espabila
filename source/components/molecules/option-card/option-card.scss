@@ -2,56 +2,108 @@
   position: relative;
   padding-top: 31px;
 
-  &__number-icon {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    display: block;
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    display: flex;
+    width: 642px;
+    padding-top: 69px;
+  }
 
-    transform: translateX(-50%);
+  &__number-icon {
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+    }
   }
 
   &__image-wrapper {
     justify-content: center;
     display: flex;
-    width: 354px;
-    margin: 0 auto;
+    max-width: 354px;
     overflow: hidden;
+
+    @media (min-width: $tablet-width) {
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 
   &__image {
     display: block;
-  }
-
-  &__image--1 {
-    margin: 0 0 0 15px;
+    width: 100%;
+    margin-top: -5px;
+    object-fit: cover;
   }
 
   &__content {
-    padding: 34px 37px;
-
+    max-width: 354px;
+    //padding: 34px 37px 41px;
+    padding: 10% calc(10% + 3px) calc(11% + 3px);
+    background-color: #fef5f5;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, .25);
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      z-index: 1;
+      width: 293px;
+      padding: 40px 29px;
+    }
   }
 
   &__title {
+    margin-top: 0;
     color: $color_black_1;
 
     @include nunito(17px, 25px, 700);
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 108%;
+    }
   }
 
   &__annotation {
+    display: block;
+    margin-bottom: 21px;
     color: $color_black_1;
 
     @include nunito(14px, 19px, 700);
   }
 
   &__description {
+    margin-top: 0;
+    margin-bottom: 22px;
     color: $color_black_1;
 
     @include nunito(13px, 18px, 300);
   }
 
-  &__more-info {
+  &__more-button {
+    display: block;
     width: 100%;
+    padding: 12px;
+  }
+}
+
+.option-card--reversed {
+  .option-card__image-wrapper {
+    @media (min-width: $tablet-width) {
+      justify-content: flex-end;
+      order: 2;
+    }
+  }
+
+  .option-card__number-icon {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: auto;
+    }
   }
 }
