@@ -1,17 +1,19 @@
+// Правила в группах в алфавитном порядке
+
 @import
   "mixins",
   "fonts",
   "variables",
-  "global";
+  "global",
+  "source/layout/default/page-main",
 
-@import
-  "source/components/atoms/button-secondary/button-secondary",
   "source/components/atoms/button-primary/button-primary",
+  "source/components/atoms/button-secondary/button-secondary",
+
   "source/components/molecules/main-nav/main-nav",
   "source/components/molecules/option-card/option-card",
-  "source/components/molecules/social-list/social-list",
+
+  "source/components/organisms/first-screen/first-screen",
   "source/components/organisms/page-header/page-header",
-  "source/components/organisms/page-footer/page-footer",
-  "source/components/organisms/first-screen",
-  "source/layout/default/page-main",
+
   "source/pages/class-options/class-options";

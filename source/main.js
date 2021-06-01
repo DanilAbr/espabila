@@ -1,4 +1,4 @@
-const firstScreenWrapper = document.querySelector('.page-header__first-screen-wrapper');
+const firstScreenWrapper = document.querySelector('.page-header__menu-pre-wrapper');
 const button = document.querySelector('.page-header__toggle-menu-button');
 
 const changeAriaLabel = () => {
@@ -13,7 +13,7 @@ const changeAriaLabel = () => {
 const onToggleMenuButtonClick = () => {
   changeAriaLabel();
   button.classList.toggle('page-header__toggle-menu-button--open-menu');
-  firstScreenWrapper.classList.toggle('page-header__first-screen-wrapper--hide');
+  firstScreenWrapper.classList.toggle('page-header__menu-pre-wrapper--hide');
 };
 
 button.addEventListener('click', onToggleMenuButtonClick);
