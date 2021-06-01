@@ -1,7 +1,9 @@
 .page-header {
+  position: relative;
+  z-index: 10;
+
   &__menu-pre-wrapper {
     position: fixed;
-    z-index: 10;
     top: 0;
     flex-grow: 1;
     display: flex;
@@ -27,7 +29,6 @@
 
   &__button-wrapper {
     position: fixed;
-    z-index: 10;
     bottom: 0;
     left: 0;
     width: 100%;
