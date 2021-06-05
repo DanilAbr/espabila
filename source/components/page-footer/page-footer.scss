@@ -3,16 +3,16 @@
   align-items: center;
   display: flex;
   padding-bottom: 100px;
+}
 
-  &__social {
-    margin-bottom: 23px;
-  }
+.page-footer__social {
+  margin-bottom: 23px;
+}
 
-  &__copyright {
-    margin: 0;
-    font-size: 13px;
-    line-height: 120%;
-    font-weight: 300;
-    color: #000000;
-  }
+.page-footer__copyright {
+  margin: 0;
+  font-size: 13px;
+  line-height: 120%;
+  font-weight: 300;
+  color: #000000;
 }

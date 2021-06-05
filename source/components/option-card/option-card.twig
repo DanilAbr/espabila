@@ -9,12 +9,12 @@
   <div class="option-card__image-wrapper">
     <picture>
       <source
-        media="(min-width: 768px)"
-        srcset={{ [props.img.default.tablet, '1x,', props.img.retina.tablet,'2x']|join(' ') }}
-      >
-      <source
         media="(min-width: 1152px)"
         srcset={{ [props.img.default.desktop, '1x,', props.img.retina.desktop,'2x']|join(' ') }}
+      >
+      <source
+        media="(min-width: 768px)"
+        srcset={{ [props.img.default.tablet, '1x,', props.img.retina.tablet,'2x']|join(' ') }}
       >
       <img
         class="option-card__image option-card__image--{{ props.id }}"

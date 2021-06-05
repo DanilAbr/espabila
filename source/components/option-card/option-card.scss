@@ -4,9 +4,17 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    align-items: flex-start;
     display: flex;
     width: 642px;
     padding-top: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    width: 920px;
+    padding-top: 139px;
+    padding-right: 79px;
   }
 }
 
@@ -20,6 +28,12 @@
     top: 0;
     right: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 81px;
+    width: 173px;
+    height: 196px;
+  }
 }
 
 .option-card__image-wrapper {
@@ -31,6 +45,13 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 550px;
   }
 }
 
@@ -51,8 +72,8 @@
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: 1;
-    width: 293px;
-    padding: 40px 29px;
+    width: 305px;
+    padding: 40px 25px 40px 18px;
   }
 }
 
@@ -64,6 +85,8 @@
   color: $color_black_1;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    margin-right: -10px;
     font-size: 18px;
     line-height: 108%;
   }
@@ -94,10 +117,20 @@
 }
 
 .option-card--reversed {
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    padding-left: 79px;
+  }
+
   .option-card__image-wrapper {
     @media (min-width: $tablet-width) {
       justify-content: flex-end;
       order: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: auto;
+      right: 0;
     }
   }
 
@@ -107,6 +140,10 @@
       top: 0;
       left: 0;
       right: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 81px;
     }
   }
 }
