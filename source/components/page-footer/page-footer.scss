@@ -10,8 +10,9 @@
 
   &__copyright {
     margin: 0;
+    font-size: 13px;
+    line-height: 120%;
+    font-weight: 300;
     color: #000000;
-
-    @include montserrat(13px, 120%, 300);
   }
 }

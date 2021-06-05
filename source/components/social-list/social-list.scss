@@ -1,14 +1,14 @@
 .social-list {
   overflow: hidden;
+}
 
-  &__content {
-    display: flex;
-    margin: 0 -23px -10px 0;
-    padding-left: 0;
-  }
+.social-list__content {
+  display: flex;
+  margin: 0 -23px -10px 0;
+  padding-left: 0;
+}
 
-  &__item {
-    margin-bottom: 10px;
-    margin-right: 23px;
-  }
+.social-list__item {
+  margin-bottom: 10px;
+  margin-right: 23px;
 }

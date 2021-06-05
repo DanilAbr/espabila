@@ -8,86 +8,89 @@
     width: 642px;
     padding-top: 69px;
   }
+}
 
-  &__number-icon {
-    display: block;
-    margin: 0 auto;
+.option-card__number-icon {
+  display: block;
+  margin: 0 auto;
 
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-    }
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
   }
+}
 
-  &__image-wrapper {
-    justify-content: center;
-    display: flex;
-    max-width: 354px;
-    overflow: hidden;
+.option-card__image-wrapper {
+  justify-content: center;
+  display: flex;
+  max-width: 354px;
+  overflow: hidden;
 
-    @media (min-width: $tablet-width) {
-      justify-content: flex-start;
-      align-items: center;
-    }
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    align-items: center;
   }
+}
 
-  &__image {
-    display: block;
-    width: 100%;
-    margin-top: -5px;
-    object-fit: cover;
+.option-card__image {
+  display: block;
+  width: 100%;
+  margin-top: -5px;
+  object-fit: cover;
+}
+
+.option-card__content {
+  max-width: 354px;
+  //padding: 34px 37px 41px;
+  padding: 10% calc(10% + 3px) calc(11% + 3px);
+  background-color: #fef5f5;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, .25);
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+    width: 293px;
+    padding: 40px 29px;
   }
+}
 
-  &__content {
-    max-width: 354px;
-    //padding: 34px 37px 41px;
-    padding: 10% calc(10% + 3px) calc(11% + 3px);
-    background-color: #fef5f5;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, .25);
+.option-card__title {
+  margin-top: 0;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 700;
+  color: $color_black_1;
 
-    @media (min-width: $tablet-width) {
-      position: relative;
-      z-index: 1;
-      width: 293px;
-      padding: 40px 29px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 108%;
   }
+}
 
-  &__title {
-    margin-top: 0;
-    color: $color_black_1;
+.option-card__annotation {
+  display: block;
+  margin-bottom: 21px;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $color_black_1;
+}
 
-    @include nunito(17px, 25px, 700);
+.option-card__description {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  color: $color_black_1;
+}
 
-    @media (min-width: $tablet-width) {
-      font-size: 18px;
-      line-height: 108%;
-    }
-  }
-
-  &__annotation {
-    display: block;
-    margin-bottom: 21px;
-    color: $color_black_1;
-
-    @include nunito(14px, 19px, 700);
-  }
-
-  &__description {
-    margin-top: 0;
-    margin-bottom: 22px;
-    color: $color_black_1;
-
-    @include nunito(13px, 18px, 300);
-  }
-
-  &__more-button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-  }
+.option-card__more-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
 }
 
 .option-card--reversed {
