@@ -8,7 +8,7 @@
 
         {% for option in options %}
           <li class="class-options__item">
-            {% include '../../components/molecules/option-card/option-card.twig' with {
+            {% include '../../components/option-card/option-card.twig' with {
               'props': option,
               'isReversed': loop.index0 != 1 ? 'reversed' : '',
             } %}
@@ -22,7 +22,7 @@
 
 {% block footer %}
 
-  {% include '../../components/organisms/page-footer/page-footer.twig' %}
+  {% include '../../components/page-footer/page-footer.twig' %}
 
 {% endblock %}
 
