@@ -60,7 +60,7 @@
     width: 63px;
     height: 63px;
     border-width: 0;
-    background-color: transparent;
+    background-color: $color_yellow;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,13 +73,13 @@
   &:hover,
   &:focus {
     @media (min-width: $desktop-width) {
-      opacity: .5;
+      opacity: .7;
     }
   }
 
   &:active {
     @media (min-width: $desktop-width) {
-      opacity: .3;
+      opacity: .5;
     }
   }
 
@@ -101,6 +101,7 @@
       width: 31px;
       height: 2px;
       background-color: $color_black_1;
+      //box-shadow: 2px 2px 0 0 $color_yellow;
     }
 
     @media (min-width: $desktop-width) {

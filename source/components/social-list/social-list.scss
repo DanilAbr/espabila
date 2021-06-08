@@ -4,7 +4,7 @@
 
 .social-list__content {
   display: flex;
-  margin: 0 -5px 0;
+  margin: 0 -5px 0 0;
   padding-left: 0;
 }
 
@@ -18,13 +18,15 @@
   display: flex;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
 
   &:hover,
   &:focus {
-    opacity: .7;
+    background-color: $color_yellow;
   }
 
   &:active {
-    opacity: .5;
+    opacity: .8;
+    background-color: $color_yellow;
   }
 }
