@@ -1,0 +1,38 @@
+<section class="about-me">
+  <div class="about-me__content">
+    <h2 class="about-me__title">Обо мне</h2>
+    <div class="about-me__image-wrapper">
+      <picture>
+        {#      <source#}
+        {#        media="(min-width: 1152px)"#}
+        {#        srcset={{ [props.img.default.desktop, '1x,', props.img.retina.desktop,'2x']|join(' ') }}#}
+        {#      >#}
+        {#      <source#}
+        {#        media="(min-width: 768px)"#}
+        {#        srcset={{ [props.img.default.tablet, '1x,', props.img.retina.tablet,'2x']|join(' ') }}#}
+        {#      >#}
+{#        <source#}
+{#          type="image/webp"#}
+{#          srcset="assets/images/about-me-photo-mobile@1x.webp 1x, assets/images/about-me-photo-mobile@2x.webp 2x"#}
+{#        >#}
+        <img
+          class="about-me__image"
+          src="assets/images/about-me-photo-mobile@1x.png"
+          srcset="assets/images/about-me-photo-mobile@2x.png 2x"
+          alt="Александра Абрамова"
+        >
+      </picture>
+    </div>
+    <p class="about-me__text">
+      За последние годы я дала несколько тысяч уроков и обучила около сотни студентов,
+      многие из которых занимались и занимаются со мной на протяжении нескольких лет.
+      Также успела поработать устным переводчиком, где получила огромное количество
+      языковой практики в условиях повышенного стресса. Постоянно повышаю свою квалификацию
+      обучаясь как самостоятельно, так на специализированных курсах для преподавателей.
+      Кроме высшего педагогического образования сдала успешно экзамен DELE C1
+      подтверждающий владение испанским языком на профессиональном уровне и
+      получила аккредитацию экзаменатора уровней B1-B2 от Института Сервантеса.
+    </p>
+
+  </div>
+</section>

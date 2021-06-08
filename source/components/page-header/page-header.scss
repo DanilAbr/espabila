@@ -35,6 +35,12 @@
   width: 100%;
   height: 51px;
   background: $color_red;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    bottom: auto;
+    background-color: transparent;
+  }
 }
 
 .page-header__toggle-menu-button {
@@ -47,6 +53,36 @@
   border: 6px solid $color_red;
   border-radius: 50%;
 
+  @media (min-width: $tablet-width) {
+    top: 0;
+    bottom: auto;
+    left: 0;
+    width: 63px;
+    height: 63px;
+    border-width: 0;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
+    left: 19px;
+    width: 80px;
+    height: 80px;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $desktop-width) {
+      opacity: .5;
+    }
+  }
+
+  &:active {
+    @media (min-width: $desktop-width) {
+      opacity: .3;
+    }
+  }
+
   &::before,
   &::after {
     content: "";
@@ -57,8 +93,21 @@
     width: 43px;
     height: 5px;
     border-radius: 2.5px;
-    background: $color_red;
+    background-color: $color_red;
     transition: all .7s ease;
+
+    @media (min-width: $tablet-width) {
+      left: calc(50% - 31px / 2);
+      width: 31px;
+      height: 2px;
+      background-color: $color_black_1;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: calc(50% - 38px / 2);
+      width: 38px;
+      height: 2px;
+    }
   }
 
   &::before {
@@ -73,10 +122,23 @@
 .page-header__toggle-menu-button--open-menu {
   &::before {
     transform: rotate(0) translateY(-4px);
+
+    @media (min-width: $tablet-width) {
+      transform: rotate(0) translateY(-3px);
+    }
   }
 
   &::after {
     width: 25px;
     transform: rotate(0) translateY(7px);
+
+    @media (min-width: $tablet-width) {
+      width: 19px;
+      transform: rotate(0) translateY(6px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 23px;
+    }
   }
 }

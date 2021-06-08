@@ -6,32 +6,40 @@
     url("../assets/images/options-bg-line-2-mobile.png"),
     url("../assets/images/options-bg-line-3-mobile.png");
   background-repeat: no-repeat;
-  background-position: 83% -112px,
-    -23px 883px,
+  background-position: left 83% top -112px,
+    left -23px top 883px,
     right -137px top 66%,
-    -173px 98%;
+    left -173px top 98%;
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;
     background-image: url("../assets/images/bg-header-image-tablet-1.png"),
-    url("../assets/images/options-bg-line-1-mobile.png"),
-    url("../assets/images/options-bg-line-2-mobile.png"),
-    url("../assets/images/options-bg-line-3-mobile.png");
-    background-position: 50% -109px,
-    -23px 589px,
-    right -137px top 61%,
-    -110px 96%;
+      url("../assets/images/options-bg-line-1-mobile.png"),
+      url("../assets/images/options-bg-line-2-mobile.png"),
+      url("../assets/images/options-bg-line-3-mobile.png");
+    background-position: left 50% top -109px,
+      left -23px top 589px,
+      right -137px top 61%,
+      left -110px top 96%;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1920px;
     background-image: url("../assets/images/bg-header-image-desktop-1.png"),
-    url("../assets/images/options-bg-line-1-desktop.png"),
-    url("../assets/images/options-bg-line-2-mobile.png"),
-    url("../assets/images/options-bg-line-3-mobile.png");
-    background-position: 50% -254px,
-    -4% 36%,
-    right -10% top 64%,
-    -10% 96%;
+      url("../assets/images/options-bg-line-1-desktop.png"),
+      url("../assets/images/options-bg-line-2-mobile.png"),
+      url("../assets/images/options-bg-line-3-mobile.png");
+    background-position: left 50% top -254px,
+      left -4% top 36%,
+      right -10% top 64%,
+      left -10% top 96%;
+  }
+
+  @media (min-width: $desktop-width-xl) {
+    background-position: left 50% top -254px,
+      left 10% top 36%,
+      right 10% top 64%,
+      left 10% top 96%;
   }
 }
 

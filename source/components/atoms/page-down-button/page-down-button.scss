@@ -1,0 +1,18 @@
+.page-down-button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 20px;
+  height: 100px;
+  border-width: 0;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}

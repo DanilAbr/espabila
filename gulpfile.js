@@ -59,6 +59,8 @@ function server(done) {
 function watcher() {
   gulp.watch("source/**/*.scss", gulp.series(styles));
   gulp.watch("source/**/*.twig", gulp.series(html));
+  gulp.watch("source/**/*.js", gulp.series(copy, html));
+  gulp.watch("source/**/*.{jpg,png,svg,ico,webp}", gulp.series(copy, html, styles));
 }
 
 function clean() {

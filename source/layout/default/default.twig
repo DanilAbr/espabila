@@ -43,6 +43,9 @@
 {% include '../../components/page-header/page-header.twig' %}
 
 <main class="page-main">
+  <div class="page-main__scroll-button">
+    {% include '../../components/atoms/page-down-button/page-down-button.twig' %}
+  </div>
 
   {% block content %}{% endblock %}
 
@@ -50,6 +53,7 @@
 
   {% block footer %}{% endblock %}
 
+  {% block script %}{% endblock %}
 <script src="main.js"></script>
 </body>
 </html>

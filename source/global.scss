@@ -7,8 +7,13 @@
 body {
   margin: 0;
   font-family: Nunito, Arial, serif;
+  line-height: 120%;
   color: $color_black_1;
   background: $color_pink;
+}
+
+button {
+  cursor: pointer;
 }
 
 ul {

@@ -1,7 +1,18 @@
 {% extends '../../layout/default/default.twig' %}
 
 {% block content %}
-  {% include '../../components/first-screen/first-screen.twig' %}
+  <div class="index">
+    <div class="index__first-screen">
+      {% include '../../components/first-screen/first-screen.twig' %}
+    </div>
+    <div class="index__about-me">
+      {% include '../../components/about-me/about-me.twig' %}
+    </div>
+    <a
+      class="index__options button-primary"
+      href="class-options.html"
+    >Варианты занятий</a>
+  </div>
 {% endblock %}
 
 {% block footer %}
