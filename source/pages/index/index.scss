@@ -1,5 +1,6 @@
 .index {
   @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
     background-image: url("../assets/images/index-bg-line-3-tablet.png");
     background-repeat: no-repeat;
     background-position: right calc(20% - 320px) top 500px;
@@ -13,6 +14,10 @@
 
 .index__about-me {
   margin-bottom: 100px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .index__options {

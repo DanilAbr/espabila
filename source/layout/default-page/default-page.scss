@@ -1,20 +1,20 @@
-.page-main {
+.default-page {
   margin-bottom: 150px;
 }
 
-.page-main__scroll-button {
+.default-page__scroll-button {
   position: fixed;
   z-index: 1000;
   top: 234px;
   right: 20px;
 }
 
-.page-main--index {
+.default-page--index {
   @media (min-width: $tablet-width) {
     background-image: url("../assets/images/index-bg-line-4-tablet.png"),
     url("../assets/images/index-bg-line-5-tablet.png");
     background-repeat: no-repeat;
-    background-position: left calc(20% - 89px) bottom -40px,
+    background-position: left calc(25% - 89px) bottom -40px,
       right calc(20% - 135px) bottom -4px;
   }
 }
