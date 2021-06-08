@@ -1,9 +1,4 @@
 .about-me {
-  //justify-items: center;
-  //display: grid;
-  //grid-template-columns: 100%;
-  //max-width: 600px;
-  //margin: 0 auto;
   position: relative;
 
   background-image: url("../assets/images/index-bg-line-6-mobile.png"),
@@ -11,6 +6,13 @@
   background-repeat: no-repeat;
   background-position: right calc(20% - 73px) top 0,
     right calc(20% - 88px) top 495px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+    background-image: url("../assets/images/about-me-photo-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center 96px;
+  }
 
   &::before {
     content: "";
@@ -23,7 +25,11 @@
     height: 460px;
     background-image: url("../assets/images/index-bg-line-8-mobile.png");
     background-repeat: no-repeat;
-    background-position: center center,
+    background-position: center center;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -31,6 +37,13 @@
   max-width: 414px;
   margin: 0 auto;
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 768px;
+    max-width: 768px;
+    padding: 0 365px 0 54px;
+  }
 }
 
 .about-me__title {
@@ -39,6 +52,10 @@
   font-size: 36px;
   line-height: 49px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+  }
 
   &::before {
     content: "";
@@ -52,6 +69,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     transform: translate(-59%, -61%);
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../assets/images/index-bg-line-2-tablet.png");
+      transform: translate(-38%, -61%);
+    }
   }
 }
 
@@ -59,6 +81,12 @@
   justify-content: flex-start;
   display: flex;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 134px;
+    right: 77px;
+  }
 
   &::before {
     content: "";
@@ -72,6 +100,10 @@
     background-image: url("../assets/images/about-me-photo-bg-mobile.png");
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -85,4 +117,10 @@
   font-size: 19px;
   line-height: 26px;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    font-size: 17px;
+    line-height: 23px;
+  }
 }

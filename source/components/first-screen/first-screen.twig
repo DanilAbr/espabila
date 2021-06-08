@@ -1,14 +1,30 @@
 <section class="first-screen">
-  <div class="first-screen__content">
+  <div class="first-screen__container">
     <div class="first-screen__img-wrapper">
-      <img class="first-screen__img" src="assets/images/index-first-photo@x1.png" alt="Александра Абрамова">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="assets/images/index-first-photo-tablet@1x.png 1x, assets/images/index-first-photo-tablet@2x.png 2x"
+        >
+        <img
+          class="first-screen__img"
+          src="assets/images/index-first-photo-mobile@1x.png"
+          srcset="assets/images/index-first-photo-mobile@2x.png 2x"
+          alt="Александра Абрамова"
+        >
+      </picture>
     </div>
 
-    <p class="first-screen__text first-screen__text--top">Привет, меня зовут</p>
-    <h1 class="first-screen__title">Александра Абрамова</h1>
-    <p class="first-screen__text first-screen__text--bottom">
-      Я более пяти лет знакомлю и влюбляю людей в испанский язык. Если ты давно мечтаешь заговорить на самой красивом
-      языке в мире, то ты обратился по адресу.
-    </p>
+    <div class="first-screen__content-wrapper">
+      <p class="first-screen__text first-screen__text--top">Привет, меня зовут</p>
+      <h1 class="first-screen__title">Александра Абрамова</h1>
+      <p class="first-screen__text first-screen__text--bottom">
+        Я более пяти лет знакомлю и влюбляю людей в испанский язык.
+        Если ты давно мечтаешь заговорить на самой красивом
+        языке в мире, то ты обратился по адресу.
+      </p>
+    </div>
+
+
   </div>
 </section>

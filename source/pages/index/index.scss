@@ -1,3 +1,12 @@
+.index {
+  @media (min-width: $tablet-width) {
+    background-image: url("../assets/images/index-bg-line-3-tablet.png");
+    background-repeat: no-repeat;
+    background-position: right calc(20% - 320px) top 500px;
+  }
+}
+
+
 .index__first-screen {
   margin-bottom: 109px;
 }
