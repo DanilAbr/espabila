@@ -10,8 +10,13 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 100px;
     background-image: url("../assets/images/about-me-photo-bg-tablet.png");
-    background-repeat: no-repeat;
     background-position: center 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 255px;
+    background-image: url("../assets/images/about-me-photo-bg-desktop.png");
+    background-position: center 8px;
   }
 
   &::before {
@@ -44,6 +49,12 @@
     max-width: 768px;
     padding: 0 365px 0 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1152px;
+    max-width: 1152px;
+    padding: 0 500px 0 132px;
+  }
 }
 
 .about-me__title {
@@ -55,6 +66,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+    font-size: 72px;
+    line-height: 98px;
   }
 
   &::before {
@@ -74,6 +91,13 @@
       background-image: url("../assets/images/index-bg-line-2-tablet.png");
       transform: translate(-38%, -61%);
     }
+
+    @media (min-width: $desktop-width) {
+      width: 680px;
+      height: 500px;
+      background-image: url("../assets/images/index-bg-line-2-desktop.png");
+      transform: translate(-56%, -55%);
+    }
   }
 }
 
@@ -86,6 +110,11 @@
     position: absolute;
     top: 134px;
     right: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -13px;
+    right: 109px;
   }
 
   &::before {
@@ -122,5 +151,10 @@
     padding-left: 10px;
     font-size: 17px;
     line-height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
   }
 }

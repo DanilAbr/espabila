@@ -12,9 +12,16 @@
 .default-page--index {
   @media (min-width: $tablet-width) {
     background-image: url("../assets/images/index-bg-line-4-tablet.png"),
-    url("../assets/images/index-bg-line-5-tablet.png");
+      url("../assets/images/index-bg-line-5-tablet.png");
     background-repeat: no-repeat;
     background-position: left calc(25% - 89px) bottom -40px,
       right calc(20% - 135px) bottom -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../assets/images/index-bg-line-4-desktop.png"),
+      url("../assets/images/index-bg-line-5-desktop.png");
+    background-position: right calc(50% + 300px) bottom -10px,
+      right calc(20% - 291px) bottom -210px;
   }
 }
